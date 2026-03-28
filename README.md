@@ -7,15 +7,15 @@ This project focuses on cleaning and transforming raw sales transaction data usi
 ________________________________________
 🎯 Objectives
 
-• Clean and standardize raw sales data
+  • Clean and standardize raw sales data
 
-• Handle missing, inconsistent, and duplicate records
+  • Handle missing, inconsistent, and duplicate records
 
-• Transform dataset into analysis-ready format
+  • Transform dataset into analysis-ready format
 
-• Perform business-focused exploratory data analysis
+  • Perform business-focused exploratory data analysis
 
-• Generate actionable insights
+  • Generate actionable insights
 
 ________________________________________
 🗂️ Dataset and Context
@@ -24,95 +24,96 @@ Dataset: sales_eda_raw
 
 Includes:
 
-• Transaction Details: Transaction ID, Date, Time
+  • Transaction Details: Transaction ID, Date, Time
 
-• Customer Info: ID, Name, Age, Gender
+  • Customer Info: ID, Name, Age, Gender
 
-• Product Info: Name, Category
+  • Product Info: Name, Category
 
-• Sales Metrics: Quantity, Price
+  • Sales Metrics: Quantity, Price
 
-• Order Details: Payment Mode, Status
+  • Order Details: Payment Mode, Status
 
 ________________________________________
 🧰 Tools Used
 
 SQL (MySQL)
 
-• Data Cleaning
+  • Data Cleaning
 
-• Data Transformation
+  • Data Transformation
 
-• EDA (CTEs, Window Functions, Aggregations)
+  • EDA (CTEs, Window Functions, Aggregations)
 
 Excel / CSV
-• Data source
+  • Data source
 ________________________________________
 
 🧹 Data Preparation (Cleaning Steps)
 
 🔹 Duplicate Removal
 
-• Used ROW_NUMBER() to identify duplicates
+  • Used ROW_NUMBER() to identify duplicates
 
-• Retained only unique transaction_id records
+  • Retained only unique transaction_id records
 
 
 🔹 Missing Value Handling
-• Replaced blanks with NULL
 
-• Imputed missing customer_id using joins
+  • Replaced blanks with NULL
 
-• Filled missing customer attributes
+  • Imputed missing customer_id using joins
 
-• Removed invalid rows
+  • Filled missing customer attributes
+
+  • Removed invalid rows
 
 
 🔹 Data Standardization
-• Gender → M/F → Male/Female
+  • Gender → M/F → Male/Female
 
-• Payment Mode → CC → Credit Card
+  • Payment Mode → CC → Credit Card
 
 
 🔹 Date Formatting
-• Converted inconsistent formats → YYYY-MM-DD
+  • Converted inconsistent formats → YYYY-MM-DD
 
 
 🔹 Column Fixes
-• quantiy → quantity
+  • quantiy → quantity
 
-• prce → price
+  • prce → price
 
 
 🔹 Data Type Corrections
-• Converted to proper INT, DECIMAL, DATE, TIME
+  • Converted to proper INT, DECIMAL, DATE, TIME
 
 
 🔹 Data Validation
-• Ensured no duplicates or inconsistent records remain
+  • Ensured no duplicates or inconsistent records remain
 ________________________________________
 
 📊 Exploratory Data Analysis (EDA)
 
 Business questions solved:
 
-• Top selling products
+  • Top selling products
+ 
+  • Most cancelled products
 
-• Most cancelled products
+  • Peak purchase time
 
-• Peak purchase time
+  • Top customers by revenue
 
-• Top customers by revenue
+  • Revenue by category
 
-• Revenue by category
+  • Cancellation & return rates
 
-• Cancellation & return rates
+  • Payment preferences
 
-• Payment preferences
+  • Age-wise purchasing behavior
 
-• Age-wise purchasing behavior
+  • Monthly sales trends
 
-• Monthly sales trends
-
-• Gender-based product preferences
+  • Gender-based product preferences
 
